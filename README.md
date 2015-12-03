@@ -10,6 +10,7 @@ At this time, you can create only one webhook per Study.
 
 ## More information
 
+- [Overview](https://github.com/actigraph/WebhookDocumentation)
 - [Creating Webhooks](creating_webhooks.md)
 - [Securing Webhooks](securing_webhooks.md) 
 
