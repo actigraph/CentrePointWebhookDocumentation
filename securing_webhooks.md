@@ -2,6 +2,11 @@
 
 > At this time, please contact ActiGraph for further assistance to creating a Webhook for your Study. If you wish to have a passcode configured with your Webhook, please let us know during this process.
 
+## More information
+
+- [Overview](readme.md)
+- [Creating Webhooks](creating_webhooks.md)
+
 
 Once your server is configured to receive payloads, it'll listen for any paylod sent to the endpoint you configured. For security reasons, you probably want to limit requests to those coming from ActiGraph. There are a few ways to go about this, for example, you could opt to whitelist requests from ActiGraph's IP address, but a far better solution is to set up a passcode (token) and validate the information.
 

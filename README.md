@@ -8,6 +8,11 @@ Webhooks can be configured on a Study. Once configured, they will be triggered e
 
 At this time, you can create only one webhook per Study.
 
+## More information
+
+- [Creating Webhooks](creating_webhooks.md)
+- [Securing Webhooks](securing_webhooks.md) 
+
 ## Events
 
 Events are what you wish to subscribe to in order to receive notifications once they are triggered. Events corresponds to a certain set of actions that can happen to your Study. For example, if you subscribe to the `upload` event you'll receive some details pertaining to any uploads to Subjects that are managed under the Study (when the upload started, completes or encounters an error).
