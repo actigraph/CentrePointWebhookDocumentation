@@ -4,14 +4,11 @@
 
 Webhooks allow you to build or set up integrations which subscribe to certain events on ActiGraph's CentrePoint system. When one of those events is triggered, we'll send a HTTP POST payload to the webhook's configured URL. Webhooks can be used to update an external system or just for simple notifications.
 
-Webhooks can be configured on a Study. Once configured, they will be triggered each time one or more subscribed events occurs on that Study.
-
-At this time, you can create only one webhook per Study.
-
-## More information
+Webhooks can be configured on a Study. Once configured, they will be triggered each time one or more subscribed events occurs on that Study. At this time, you can create only one webhook per Study.
 
 - [Overview](https://github.com/actigraph/WebhookDocumentation)
 - [Creating Webhooks](creating_webhooks.md)
+- [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md) 
 
 ## Events

@@ -7,4 +7,6 @@ Public availability to creating webhooks for Studies is not available at this ti
 ## More information
 
 - [Overview](https://github.com/actigraph/WebhookDocumentation)
+- [Creating Webhooks](creating_webhooks.md)
+- [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)

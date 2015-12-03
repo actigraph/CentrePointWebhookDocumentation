@@ -2,12 +2,6 @@
 
 > At this time, please contact ActiGraph for further assistance to creating a Webhook for your Study. If you wish to have a passcode configured with your Webhook, please let us know during this process.
 
-## More information
-
-- [Overview](https://github.com/actigraph/WebhookDocumentation)
-- [Creating Webhooks](creating_webhooks.md)
-
-
 Once your server is configured to receive payloads, it'll listen for any paylod sent to the endpoint you configured. For security reasons, you probably want to limit requests to those coming from ActiGraph. There are a few ways to go about this, for example, you could opt to whitelist requests from ActiGraph's IP address, but a far better solution is to set up a passcode (token) and validate the information.
 
 ### Validating payloads from ActiGraph
@@ -47,3 +41,10 @@ Obviously, your language and server implementations may differ than this code. T
 
 - No matter which implementation you use, the has signature starts with `sha1=`, using the key of your passcode and your payload body.
 - Using a plain `==` operator is not **advised**. A method like `secure_compare` performs a "constant time" string comparison, which renders it safe from certain timing attacks against reqular equality operators.
+
+## More information
+
+- [Overview](https://github.com/actigraph/WebhookDocumentation)
+- [Creating Webhooks](creating_webhooks.md)
+- [Event Types](event_types.md)
+- [Securing Webhooks](securing_webhooks.md)
