@@ -23,8 +23,8 @@ X-Actigraph-Event: upload
 X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578ADB42CD0DE9D60A1435D120525074535BEABD083BFE7C0CB5451BBEFB5B55BC6C60A10449E34E
 
 {
-	"status" : "Started", // Started, Completed, Error
-	"message" : "Simple message pertaining to the upload.", // This will only appear in the event an error occurs.
+	"status" : "Started or Completed or Error",
+	"message" : "Simple message pertaining to the upload. This will only appear if the upload fails in anyway.",
 	"uploadId" : "123456",
 	"subjectId" : "987654",
 	"studyId" : "456789"
