@@ -4,7 +4,7 @@
 
 ## More information
 
-- [Overview](readme.md)
+- [Overview](https://github.com/actigraph/WebhookDocumentation)
 - [Creating Webhooks](creating_webhooks.md)
 
 
