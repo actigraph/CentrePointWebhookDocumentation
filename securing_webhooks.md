@@ -21,7 +21,7 @@ This hash signature is passed along with each request in the headers as `X-ActiG
 }
 ```
 
-The goal is to compute a hash using your passcode, and esure that the has from ActiGraph matches. ActiGraph uses an psudo-HMAC hexdigest to compute the hash, so you could change your server to look a little like this:
+The goal is to compute a hash using your passcode, and ensure that the hash from ActiGraph matches. ActiGraph uses an HMAC256-to-base64 method to compute the hash, so you could change your server to look a little like this:
 
 ```csharp
 
@@ -32,6 +32,7 @@ const string SECRET_KEY = "B3`MlG4sJR.X^-%w=oG_UrNBEpszl?";
 [HttpPost]public HttpResponseMessage Post() {
 	
 	// The body of the request is used while generating the signature
+	// Example: "{\"Test\":\"Value\"}";
 	var _body = await Request.Content.ReadAsStringAsync();
 	
 	// Grab the signature from the Request Header
@@ -42,10 +43,8 @@ const string SECRET_KEY = "B3`MlG4sJR.X^-%w=oG_UrNBEpszl?";
 		return new HttpResponseMessage(HttpStatusCode.Unauthorized);
 		
 	// Locally generate the has and compare them
-	var computedSignature = HMACSHA512Digest(SECRET_KEY, _body);
-	
-	// Should generate something like this:
-	// sha1=81CAC7705F1D2159F4A497F5FB9A43121B41F80CCBC60D21CF016ACFED637EFF18210C80F76A8BDFCCC8EA71BD02EB96ADA6D54397CBEA361167A4A5138143B3
+	// Should generate something like this: Ri20SCicySZmIf2D4kCY5KWEJrsqI7W8sWXMADj1RaQ=
+	var computedSignature = HMACSHA256Base64(SECRET_KEY, _body);
 	
 	// Compare the signatures
 	if(!string.Equals(headerSignature, computedSignature))
@@ -53,27 +52,23 @@ const string SECRET_KEY = "B3`MlG4sJR.X^-%w=oG_UrNBEpszl?";
 		
 	// Signatures match, continue...
 	
-	var _json = JsonConvert.DeserializeObject>(_body);
+	var _json = JsonConvert.DeserializeObject(_body);
 	/* Do something with the json object. */
 }
 
-// ==================================================
-// The following method is used by ActiGraph to generate 
-// the hash signature if you provide a passcode during the 
-// setup of your webhook.
-// ==================================================
+// The following method is used by ActiGraph's webhook system to generate the signature hash.
+// To properly compare the inbound signature, use the following method:
 
-// This method will take the secret and message strings
-// - Covert them string -> char[] -> byte[]
-// - Compute a byte[] hash using HMAC512
-// - Returns a hash string
-public static string HMACSHA512Digest(string secret, string message){	if (string.IsNullOrEmpty(secret))		throw new ArgumentNullException(@"secret");	if (string.IsNullOrEmpty(message))		throw new ArgumentNullException(@"message");	// Convert the secret and message to char arrays.	byte[] secretBytes = new byte[secret.Length * sizeof(char)];	System.Buffer.BlockCopy(secret.ToCharArray(), 0, secretBytes, 0, secretBytes.Length);	byte[] messageBytes = new byte[message.Length * sizeof(char)];	System.Buffer.BlockCopy(message.ToCharArray(), 0, messageBytes, 0, messageBytes.Length);	// Use HMACSHA512 to hash the message, using the secret	using (var hmac = new HMACSHA512(secretBytes))	{		// Compute the hash into a byte array		var hashBytes = hmac.ComputeHash(messageBytes);				// converting to a string, replacing the dashes.		var computedHash = BitConverter.ToString(hashBytes).Replace(@"-", @"");				// Return the newly formed string with the prefix sha1=		return string.Format(@"sha1={0}", computedHash);	}}
+public static string HMACSHA256Base64(string secret, string message)
+{
+    using (var hash = new HMACSHA256(Encoding.UTF8.GetBytes(secret)))
+        return Convert.ToBase64String(hash.ComputeHash(Encoding.UTF8.GetBytes(message)));
+}
+
 
 ```
 
 Obviously, your language and server implementations may differ than this code.
-
-- No matter which implementation you use, the hash signature starts with `sha1=`, using the key of your passcode and your payload body.
 
 ## More information
 
