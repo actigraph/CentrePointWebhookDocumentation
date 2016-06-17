@@ -11,7 +11,7 @@ Triggered when a upload occurs from any ActiGraph system (ActiSync or CentrePoin
 
 #### Webhook Payload Parameters
 
-| Name        | Type | Accepted Values | Statuses Where Displayed | Description  |
+| Name        | Type | Accepted Values | Statuses where displayed | Description  |
 | ------------- |:----------:|  -----: | -----: |  -----: |
 | status      | String | "started", "completed", "error" | "started", "completed", "error" | Status of upload processing
 | uploadId      | Integer    |   |  "started", "completed", "error" | Unique identifier for subject upload |
