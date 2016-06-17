@@ -31,7 +31,7 @@ Each event type has a specific payload format with the relevant event informatio
 | uploadId      | Integer    |   |  "started", "completed", "error" | Unique identifier for subject upload |
 | studyId | Integer  |    | "started", "completed", "error" |  Unique identifier for study |
 | subjectId | Integer     |   | "started", "completed", "error" |Unique identifier for subject |
-| message | String  |  | "error"| Contents of error message if error occurs during upload processing. Parameter will only exist if the status equals 'error'. |
+| message | String  |  | "error"| Contents of error message if error occurs during upload processing. |
 | firstEpochUTC | DateTime  |    | "completed"  | First Epoch Timestamp (in UTC) of added data from upload  |
 | firstEpochSubjectTZ | DateTime      |   | "completed"  | First Epoch Timestamp (in subject's timezone) of added data from upload |
 | lastEpochUTC | DateTime     |    | "completed" | Last Epoch Timestamp (in UTC) of added data from upload |
