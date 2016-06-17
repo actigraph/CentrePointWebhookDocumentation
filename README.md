@@ -49,7 +49,7 @@ HTTP requests made to your webhook's configured URL endpoint will contain severa
 4. `X-Actigraph-Webhook-Id` Unique ID of the configured webhook.
 4. `User-Agent: ActiGraph-Hookshot/`
 
-### Example delivery with Upload 'started' status
+### Example delivery with upload 'started' status
 
 ```json
 POST /payload HTTP/1.1
@@ -73,7 +73,7 @@ X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578A
 
 ```
 
-### Example delivery with Upload 'completed' status
+### Example delivery with upload 'completed' status
 
 ```json
 POST /payload HTTP/1.1
@@ -101,7 +101,7 @@ X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578A
 
 ```
 
-### Example delivery with Upload 'error' status
+### Example delivery with upload 'error' status
 
 ```json
 POST /payload HTTP/1.1
