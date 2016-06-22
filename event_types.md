@@ -18,10 +18,10 @@ Triggered when a upload occurs from any ActiGraph system (ActiSync or CentrePoin
 | studyId | Integer  |    | "started", "completed", "error" |  Unique identifier for study |
 | subjectId | Integer     |   | "started", "completed", "error" |Unique identifier for subject |
 | message | String  |  | "error"| Contents of error message if error occurs during upload processing. |
-| firstEpochUTC | DateTime  |    | "completed"  | First Epoch Timestamp (in UTC) of added data from upload  |
-| firstEpochSubjectTZ | DateTime      |   | "completed"  | First Epoch Timestamp (in subject's timezone) of added data from upload |
-| lastEpochUTC | DateTime     |    | "completed" | Last Epoch Timestamp (in UTC) of added data from upload |
-| lastEpochSubjectTZ | DateTime      |   | "completed" | Last Epoch Timestamp (in subject's timezone) of added data from upload  |
+| firstEpochUTC | DateTime (ISO 8601)  |    | "completed"  | First Epoch Timestamp (in UTC) of added data from upload  |
+| firstEpochSubjectTZ | DateTime (ISO 8601)      |   | "completed"  | First Epoch Timestamp (in subject's timezone) of added data from upload |
+| lastEpochUTC | DateTime (ISO 8601)    |    | "completed" | Last Epoch Timestamp (in UTC) of added data from upload |
+| lastEpochSubjectTZ | DateTime (ISO 8601)     |   | "completed" | Last Epoch Timestamp (in subject's timezone) of added data from upload  |
 
 
 
@@ -67,10 +67,10 @@ X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578A
 
 {
 	"status" : "completed",
-	"firstEpochUTC" : "6/14/2016 8:46:00 PM",
-	"firstEpochSubjectTZ" : "6/14/2016 3:46:00 PM",
-	"lastEpochUTC" : "6/14/2016 8:47:00 PM",
-	"lastEpochSubjectTZ" : "6/14/2016 3:47:00 PM",
+	"firstEpochUTC":"2016-06-14T20:46:00.0000000",
+	"firstEpochSubjectTZ":"2016-06-14T15:46:00.0000000",
+	"lastEpochUTC":"2016-06-14T20:47:00.0000000",
+	"lastEpochSubjectTZ":"2016-06-14T15:47:00.0000000",
 	"uploadId" : "85045",
 	"subjectId" : "44732",
 	"studyId" : "189"
