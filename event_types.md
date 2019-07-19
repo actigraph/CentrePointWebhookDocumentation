@@ -100,7 +100,7 @@ X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578A
 
 ## Raw Processing Complete Event
 
-Triggered when a processing of data retrieval request made through the CentrePoint API has completed.
+Triggered when a processing of raw data upload has completed.
 
 **Webhook event name:**
 
