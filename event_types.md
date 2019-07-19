@@ -180,7 +180,7 @@ Triggered when a processing of data retrieval request made through the CentrePoi
 |max_event_timestamp|String (Date)|Maximum timestamp of processsed data|
 |file_size|Number|File Size in Bytes|
 |file_index|Number|Zero based file index (used when a single file is split)|
-|file_name|String||
+|file_name|String|File Name|
 
 **Webhook payload example:**
 
