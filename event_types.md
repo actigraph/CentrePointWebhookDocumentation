@@ -109,11 +109,11 @@ Triggered when a processing of raw data upload has completed.
 **Webhook Payload Parameters:**
 
 |Name|Type|Description|
-|:---|---:|:----------|
+|:---|:---|:----------|
 |study_id|Number|CentrePoint Study ID|
 |subject_id|Number|CentrePoint Subject ID|
 |monitor_serial|String|Activity Monitor Serial Number|
-|created_at_utc|String (ISO8601 Date/Time)||
+|created_at_utc|String (ISO8601 Date/Time)|Created Date of upload processing request|
 |min_event_timestamp|String (ISO8601 Date/Time)|Minimum timestamp of processsed raw data|
 |max_event_timestamp|String (ISO8601 Date/Time)|Maximum timestamp of processsed raw data|
 |status|String|Completed or Error|
