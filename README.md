@@ -18,6 +18,8 @@ Events are what you wish to subscribe to in order to receive notifications once 
 Available events are:
 
 1. `upload` *All events relating to uploads, such as started, completed and error.*
+2. `raw processing complete` *Event triggered upon processing completion of RAW Data File in the CentrePoint Version 3 System. This event can be used to denote when RAW/EPOCH data is available to be retrieved in the CentrePoint (V3) API via Data Retrieval request*
+3. `data retrieval complete` *Event triggered upon the completion of data retrieval request in the CentrePoint V3 API. This event can be used to know when RAW/EPOCH data files are available to be downloaded in the CentrePoint V3 API.*
 
 ## Payloads
 
