@@ -15,14 +15,15 @@ At this time, webhooks will have to be setup by someone at ActiGraph. Please con
 
 ## Events
 
-Events are what you wish to subscribe to in order to receive notifications once they are triggered. Events corresponds to a certain set of actions that can happen to your Study. For example, if you subscribe to the `upload` event you'll receive some details pertaining to any uploads to Subjects that are managed under the Study (when the upload started, completes or encounters an error).
+Events are what you wish to subscribe to in order to receive notifications once they are triggered. Events corresponds to a certain set of actions that can happen to your Study. For example, if you subscribe to the `upload` event you'll receive some details pertaining to any uploads to subjects that are managed under the Study (when the upload started, completes or encounters an error).
 
 Available events are:
 
+1. `upload` *Relates to events for the processing of a given upload-sync. This event is triggered when CentrePoint processes an upload. There's three variations of the event: started (denotes that processing has started), completed (denotes processing has completed), and error (denotes an error occured during the upload processing)*
 
-1. `raw processing complete` *Event triggered upon processing completion of RAW Data File in the CentrePoint Version 3 System. This event can be used to denote when RAW/EPOCH data is available to be retrieved in the CentrePoint (V3) API via Data Retrieval request.*
-2. `upload` *All events relating to uploads, such as started, completed and error.*
-3. `data retrieval complete` *Event triggered upon the completion of data retrieval request in the CentrePoint V3 API. This event can be used to know when RAW/EPOCH data files are available to be downloaded in the CentrePoint V3 API.*
+2. `raw processing complete` *Event triggered upon processing completion of RAW Data File in the CentrePoint Version 3 System. This event can be used to denote when RAW data files are available to be retrieved in the CentrePoint (V3) API (via Data Retrieval request).*
+
+3. `data retrieval complete` *Event triggered upon the completion of data retrieval request in the CentrePoint V3 API. This event can be used to know when RAW data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.*
 
 ## Payloads
 
