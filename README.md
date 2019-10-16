@@ -6,7 +6,7 @@ Webhooks allow you to build or set up integrations which subscribe to certain ev
 
 Webhooks can be setup per study configuration. Once configured, they will be triggered each time one or more subscribed events occurs on that Study. 
 
-At this time, webhooks will have to be setup by someone at ActiGraph. Please contact  [Actigraph](http://www.actigraphcorp.com/support/contact-support/) to register a new webhook.
+At this time, webhooks will have to be setup by someone at ActiGraph. Please contact  [ActiGraph](https://www.actigraphcorp.com/support/software/) to register a new webhook.
 
 - [Overview](https://github.com/actigraph/WebhookDocumentation)
 - [Creating Webhooks](creating_webhooks.md)
