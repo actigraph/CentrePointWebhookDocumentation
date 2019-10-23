@@ -4,7 +4,7 @@ Each event has as similar JSON schema, but a unique `payload` object that is det
 
 ## UploadEvent
 
-Triggered when a upload occurs from any ActiGraph system (ActiSync or CentrePoint Sync for Mobile, for example).
+Triggered when the epoch processing of an upload occurs from any CentrePoint client (such as ActiSync, CentrePoint Data Hub (CDH) and/or CentrePoint Mobile Sync).
 
 **Webhook event name:**
 
