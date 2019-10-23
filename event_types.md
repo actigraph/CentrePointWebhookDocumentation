@@ -4,7 +4,7 @@ Each event has as similar JSON schema, but a unique `payload` object that is det
 
 ## UploadEvent
 
-Triggered when the processing of an upload occurs from any CentrePoint client (such as ActiSync, CentrePoint Data Hub (CDH) and/or CentrePoint Mobile Sync). This event is usually the final step in the processing pipeline in the CentrePoint system.
+Triggered when the processing of an upload occurs from any CentrePoint client (such as ActiSync, CentrePoint Data Hub (CDH) and/or CentrePoint Mobile Sync). This event is the final step in the processing pipeline for uploads coming in to the CentrePoint system.
 
 **Webhook event name:**
 
