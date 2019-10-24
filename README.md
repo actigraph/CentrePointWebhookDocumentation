@@ -19,7 +19,7 @@ Events are what you wish to subscribe to in order to receive notifications once 
 
 Available events are:
 
-1. `upload` *Relates to events for the processing of a given upload-sync. This event is triggered when CentrePoint processes an upload. There's three variations of the event: started (denotes that processing has started), completed (denotes processing has completed), and error (denotes an error occured during the upload processing)*
+1. `upload` *Relates to events for the processing of a given upload-sync. This event is triggered when CentrePoint processes an upload. There's three variations of the event: started (denotes that processing has started), completed (denotes processing has completed), and error (denotes an error occured during the upload processing)*.
 
 2. `raw processing complete` *Event triggered upon processing completion of RAW Data File in the CentrePoint Version 3 System. This event can be used to denote when RAW data files are available to be retrieved in the CentrePoint (V3) API (via Data Retrieval request).*
 
