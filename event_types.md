@@ -195,7 +195,7 @@ Content-Type: application/json
 X-Request-Id: 3a09f5c9-824e-4de5-8aca-dcdd6db4b9f8
 X-Actigraph-Webhook-Id: 15
 X-Actigraph-Delivery: bc0e8916-ca49-41d8-9c97-eb6b286dcc78
-X-Actigraph-Event: raw_processing_complete
+X-Actigraph-Event: data_retrieval_complete
 {
   "client_id": "YrcN0eLR5IIiCgG85CgkzT0",
   "tracking_id": "a7da760f-7906-4cb7-964a-ab87f45ea962",
