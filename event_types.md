@@ -124,16 +124,19 @@ Triggered when a processing of raw data upload has completed.
 The following are the parameters within the webhook request when upload processing is started
 
 ```http
-POST /payload HTTP/1.1
-Host: localhost:4567
-Content-Length: 98
-User-Agent: ActiGraph-Hookshot/1.0
-Content-Type: application/json
-X-Request-Id: 3a09f5c9-824e-4de5-8aca-dcdd6db4b9f8
-X-ActiGraph-Webhook-id: 46
-X-ActiGraph-Event: raw_processing_complete
-X-ActiGraph-Delivery: b50b9f81-42ce-3be8-10f3-563e6cf0bdce
-X-Client-Cert-Used: False
+POST <webhook uri goes here>
+host: ennr7mfrika8q.x.pipedream.net
+content-type: application/json; charset=utf-8
+request-context: appId=cid-v1:d39b3fc7-69a6-4aec-bca4-4d53b4b4bb3e
+request-id: |bba36cc5d88bb84985ec30e5b934efe5.0cbf24f10a330747.
+traceparent: 00-bba36cc5d88bb84985ec30e5b934efe5-0cbf24f10a330747-00
+user-agent: ActiGraph-Hookshot/1.0 ActiGraph-Hookshot/1.0
+x-actigraph-delivery: 9bcf5ddd-d036-b50a-9183-76da46c5d648
+x-actigraph-event: raw_processing_complete
+x-actigraph-webhook-id: 54
+x-client-cert-used: False
+content-length: 285
+connection: keep-alive
 {
   "study_id": 1064,
   "subject_id": 19525,
