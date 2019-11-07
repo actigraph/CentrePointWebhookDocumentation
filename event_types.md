@@ -190,7 +190,7 @@ Triggered when a processing of data retrieval request made through the CentrePoi
 The following are the parameters within the webhook request when upload processing is started
 
 ```http
-POST <host name goes here>
+POST <web hook uri goes here>
 host: <host name goes here>
 content-type: application/json; charset=utf-8
 request-context: appId=cid-v1:d39b3fc7-69a6-4aec-bca4-4d53b4b4bb3e
