@@ -29,16 +29,16 @@ Triggered when the processing of an upload occurs from any CentrePoint client (s
 The following are the parameters within the webhook request when upload processing is started
 
 ```http
-POST /payload HTTP/1.1
-Host: localhost:4567
-Content-Length: 98
-User-Agent: ActiGraph-Hookshot/1.0
-Content-Type: application/json
-X-Request-Id: 3a09f5c9-824e-4de5-8aca-dcdd6db4b9f8
-X-Actigraph-Webhook-Id: 15
-X-Actigraph-Delivery: bc0e8916-ca49-41d8-9c97-eb6b286dcc78
-X-Actigraph-Event: upload
-X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578ADB42CD0DE9D60A1435D120525074535BEABD083BFE7C0CB5451BBEFB5B55BC6C60A10449E34E
+POST <webhook uri goes here>
+host: <host goes here>
+content-type: application/json
+user-agent: ActiGraph-Hookshot/1.0
+x-actigraph-delivery: 2f609110-0fea-33de-b70e-337c581e9001
+x-actigraph-event: upload
+x-actigraph-webhook-id: 15
+x-client-cert-used: false
+content-length: 76
+connection: keep-alive
 {
     "status" : "started",
     "uploadId" : "85045",
@@ -52,16 +52,16 @@ X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578A
 The following are the parameters within the webhook request when upload processing is completed
 
 ```http
-POST /payload HTTP/1.1
-Host: localhost:4567
-Content-Length: 98
-User-Agent: ActiGraph-Hookshot/1.0
-Content-Type: application/json
-X-Request-Id: 3a09f5c9-824e-4de5-8aca-dcdd6db4b9f8
-X-Actigraph-Webhook-Id: 15
-X-Actigraph-Delivery: bc0e8916-ca49-41d8-9c97-eb6b286dcc78
-X-Actigraph-Event: upload
-X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578ADB42CD0DE9D60A1435D120525074535BEABD083BFE7C0CB5451BBEFB5B55BC6C60A10449E34E
+POST <webhook uri goes here>
+host: <host goes here>
+content-type: application/json
+user-agent: ActiGraph-Hookshot/1.0
+x-actigraph-delivery: 2f609110-0fea-33de-b70e-337c581e9001
+x-actigraph-event: upload
+x-actigraph-webhook-id: 15
+x-client-cert-used: false
+content-length: 76
+connection: keep-alive
 {
     "status" : "completed",
     "firstEpochUTC":"2016-06-14T20:46:00.0000000",
@@ -79,16 +79,16 @@ X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578A
 The following are the parameters within the webhook request when error occurs during upload processing
 
 ```http
-POST /payload HTTP/1.1
-Host: localhost:4567
-Content-Length: 98
-User-Agent: ActiGraph-Hookshot/1.0
-Content-Type: application/json
-X-Request-Id: 3a09f5c9-824e-4de5-8aca-dcdd6db4b9f8
-X-Actigraph-Webhook-Id: 15
-X-Actigraph-Delivery: bc0e8916-ca49-41d8-9c97-eb6b286dcc78
-X-Actigraph-Event: upload
-X-Actigraph-Signature: sha1=E2316FEDF726CBB2FD31EA25FF55E966A4543EEC290944DA578ADB42CD0DE9D60A1435D120525074535BEABD083BFE7C0CB5451BBEFB5B55BC6C60A10449E34E
+POST <webhook uri goes here>
+host: <host goes here>
+content-type: application/json
+user-agent: ActiGraph-Hookshot/1.0
+x-actigraph-delivery: 2f609110-0fea-33de-b70e-337c581e9001
+x-actigraph-event: upload
+x-actigraph-webhook-id: 15
+x-client-cert-used: false
+content-length: 76
+connection: keep-alive
 {
     "status" : "error",
     "message" : "A problem occured during upload processing",
