@@ -190,15 +190,19 @@ Triggered when a processing of data retrieval request made through the CentrePoi
 The following are the parameters within the webhook request when upload processing is started
 
 ```http
-POST /payload HTTP/1.1
-Host: localhost:4567
-Content-Length: 98
-User-Agent: ActiGraph-Hookshot/1.0
-Content-Type: application/json
-X-Request-Id: 3a09f5c9-824e-4de5-8aca-dcdd6db4b9f8
-X-Actigraph-Webhook-Id: 15
-X-Actigraph-Delivery: bc0e8916-ca49-41d8-9c97-eb6b286dcc78
-X-Actigraph-Event: data_retrieval_complete
+POST <host name goes here>
+host: <host name goes here>
+content-type: application/json; charset=utf-8
+request-context: appId=cid-v1:d39b3fc7-69a6-4aec-bca4-4d53b4b4bb3e
+request-id: |5e98ebcb010202488a0c13d494908f80.19b378e32058274d.
+traceparent: 00-5e98ebcb010202488a0c13d494908f80-19b378e32058274d-00
+user-agent: ActiGraph-Hookshot/1.0 ActiGraph-Hookshot/1.0 ActiGraph-Hookshot/1.0
+x-actigraph-delivery: 62049727-b616-1ff6-f998-ae27ffc8c3cb
+x-actigraph-event: data_retrieval_complete
+x-actigraph-webhook-id: 56
+x-client-cert-used: False
+content-length: 806
+connection: keep-alive
 {
   "client_id": "YrcN0eLR5IIiCgG85CgkzT0",
   "tracking_id": "a7da760f-7906-4cb7-964a-ab87f45ea962",
