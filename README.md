@@ -23,4 +23,4 @@ Available events are:
 
 2. `data retrieval complete` *Event triggered upon the completion of data retrieval request in the CentrePoint V3 API. This event can be used to know when RAW data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.*
 
-3. `upload` *Relates to events for the processing of a given upload-sync. This event is triggered when CentrePoint processes an upload. There's three variations of the event: started (denotes that processing has started), completed (denotes processing has completed), and error (denotes an error occured during the upload processing)*. This is the final event in the data processing pipeline from an upload-sync.
+3. `upload` *Relates to events for the processing (or ingestion) of a given upload-sync. This event is triggered when CentrePoint processes an upload. There's three variations of the event: started (denotes that processing has started), completed (denotes processing has completed), and error (denotes an error occured during the upload processing)*. This is the final event in the data processing pipeline from an upload-sync.
