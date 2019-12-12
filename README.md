@@ -24,3 +24,18 @@ Available events are:
 2. `data retrieval complete` *Event triggered upon the completion of data retrieval request in the CentrePoint V3 API. This event can be used to know when RAW data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.*
 
 3. `upload` *Relates to events for the processing (or ingestion) of a given upload-sync. This event is triggered when CentrePoint processes an upload. There's three variations of the event: started (denotes that processing has started), completed (denotes processing has completed), and error (denotes an error occured during the upload processing)*. This is the final event in the data processing pipeline from an upload-sync.
+
+## Open Firewall Access 
+
+In some scenarios, external systems receiving webhooks from ActiGraph may be behind a reverse-proxy with firewall enforcement. Here are the list of IPs that will need to be whitelisted in order to receive in-bound webhook requests from ActiGraph
+
+
+- 13.82.60.74
+- 40.114.106.25
+- 40.114.109.196
+- 40.87.40.14
+- 40.87.44.79
+- 40.87.47.202
+- 40.87.41.144
+- 40.87.47.137
+- 13.68.136.18
