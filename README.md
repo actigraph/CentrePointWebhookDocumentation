@@ -9,9 +9,10 @@ Webhooks can be setup per study configuration. Once configured, they will be tri
 At this time, webhooks will have to be setup by someone at ActiGraph. Please contact  [ActiGraph](https://www.actigraphcorp.com/support/software/) to register a new webhook.
 
 - [Overview](https://github.com/actigraph/WebhookDocumentation)
-- [Creating Webhooks](creating_webhooks.md)
+- [Managing Webhooks](creating_webhooks.md)
 - [Event Types](event_types.md)
-- [Securing Webhooks](securing_webhooks.md) 
+- [Securing Webhooks](securing_webhooks.md)
+- [Validating Webhooks](validating_webhooks.md)
 
 ## Events
 

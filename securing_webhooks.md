@@ -12,7 +12,8 @@ This hash signature is passed along with each request in the headers as `X-ActiG
 
 ```csharp
 [Route("webhook/test")]
-[HttpPost]public HttpResponseMessage Post() {
+[HttpPost]
+public HttpResponseMessage Post() {
 	
 	var _body = await Request.Content.ReadAsStringAsync();
 	var _json = JsonConvert.DeserializeObject<IDictionary<string, string[]>>(_body);
@@ -29,7 +30,8 @@ The goal is to compute a hash using your passcode, and ensure that the hash from
 const string SECRET_KEY = "B3`MlG4sJR.X^-%w=oG_UrNBEpszl?";
 
 [Route("webhook/test")]
-[HttpPost]public HttpResponseMessage Post() {
+[HttpPost]
+public HttpResponseMessage Post() {
 	
 	// The body of the request is used while generating the signature
 	// Example: "{\"Test\":\"Value\"}";
@@ -73,6 +75,7 @@ Obviously, your language and server implementations may differ than this code.
 ## More information
 
 - [Overview](https://github.com/actigraph/WebhookDocumentation)
-- [Creating Webhooks](creating_webhooks.md)
+- [Managing Webhooks](creating_webhooks.md)
 - [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)
+- [Validating Webhooks](validating_webhooks.md)
