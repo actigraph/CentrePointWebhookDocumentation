@@ -240,7 +240,7 @@ connection: keep-alive
 ## More information
 
 - [Overview](https://github.com/actigraph/WebhookDocumentation)
-- [Managing Webhooks](creating_webhooks.md)
+- [Managing Webhooks](managing_webhooks.md)
 - [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)
 - [Validating Webhooks](validating_webhooks.md)
