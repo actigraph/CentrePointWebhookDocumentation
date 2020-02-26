@@ -8,7 +8,7 @@ Webhooks are configured per study configuration. Once configured, they will be t
 
 ## Managing Webhooks
 
-Webhooks are managed in the [CentrePoint Web Portal](https://studyadmin.actigraphcorp.com) and can be setup by someone with the appropraite roles/permissions. Please contact  [ActiGraph](https://www.actigraphcorp.com/support/software/) for assistance.
+Webhooks are managed in the [CentrePoint Web Portal](https://studyadmin.actigraphcorp.com) and can be setup by someone with the appropraite roles/permissions. Refer to [Managing Webhooks](managing_webhooks.md) for more information. Contact  [ActiGraph](https://www.actigraphcorp.com/support/software/) for assistance.
 
 ## Validating Webhooks
 
