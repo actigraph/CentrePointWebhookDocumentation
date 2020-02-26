@@ -2,7 +2,7 @@
 
 ## Webhook Manager Role
 
-Viewing, creating, and editing webhooks is relegated to accounts that have the Webhooks Manager Role. When logged in with an account with the Webhooks Manager Role, there is a navigation button named Webhooks in the navigation bar on the left. Clicking this button will take you to the Webhooks Management page where new webhooks can be created or existing webhook can be viewed or edited. To have the Webhooks Manager Role added to an account, please contact ActiGraph support.
+Viewing, creating, and editing webhooks is relegated to CentrePoint accounts that have the Webhooks Manager Role. When logged in with an account with the Webhooks Manager Role, there is a navigation button named Webhooks in the navigation bar on the left. Clicking this button will take you to the Webhooks Management page where new webhooks can be created or existing webhook can be viewed or edited. To have the Webhooks Manager Role added to an account, please contact ActiGraph support.
 
 ## Create a Webhook
 
