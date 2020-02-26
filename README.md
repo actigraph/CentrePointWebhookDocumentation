@@ -14,8 +14,6 @@ Webhooks are managed in the [CentrePoint Web Portal](https://studyadmin.actigrap
 
 Before any events can be sent to the Target URL for a webhook, the webhook needs to pass a validation process. The main purpose of this validation process is for ActiGraph to verify the owner of the Target URL. The verification process involves a validation code being sent to the Target URL, and your endpoint echoing back that same code. Refer to [Validating Webhooks](validating_webhooks.md) for more information.
 
-
-- [Overview](https://github.com/actigraph/WebhookDocumentation)
 - [Managing Webhooks](managing_webhooks.md)
 - [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)
