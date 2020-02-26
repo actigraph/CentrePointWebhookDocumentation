@@ -4,9 +4,11 @@
 
 Webhooks allow you to build or set up integrations which subscribe to certain events on ActiGraph's CentrePoint ecosystem. When one of those events is triggered, we'll send a HTTP POST payload to the webhook's configured URL. Webhooks can be used to update an external system or just for simple notifications.
 
-Webhooks can be setup per study configuration. Once configured, they will be triggered each time one or more subscribed events occurs on that Study. 
+Webhooks are configured per study configuration. Once configured, they will be triggered each time one or more subscribed events occurs on that Study. 
 
-At this time, webhooks will have to be setup by someone at ActiGraph. Please contact  [ActiGraph](https://www.actigraphcorp.com/support/software/) to register a new webhook.
+Before any events can be sent to the Target URL for a webhook, the webhook needs to pass a validation process. The main purpose of this validation process is for ActiGraph to verify the owner of the Target URL. The verification process involves a validation code being sent to the Target URL, and your endpoint echoing back that same code. Refer to [Validating Webhooks](validating_webhooks.md) for more information.
+
+Webhooks are managed in the [CentrePoint Web Portal](https://studyadmin.actigraphcorp.com) and can be setup by someone with the appropraite roles and permissions. Please contact  [ActiGraph](https://www.actigraphcorp.com/support/software/) for assistance.
 
 - [Overview](https://github.com/actigraph/WebhookDocumentation)
 - [Managing Webhooks](managing_webhooks.md)
