@@ -10,6 +10,10 @@
 - [Open Firewall Access](#open-firewall-access)
 
 
+## CentrePoint Integration Guide
+-------------------
+To view all options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide#centrepoint-system-integration-guide).
+
 ## Overview
 
 Webhooks allow you to build or set up integrations which subscribe to certain events on ActiGraph's CentrePoint ecosystem. When one of those events is triggered, the system will send a HTTP POST request containing event data to the webhook's configured URL. Webhooks can be used to update an external system or just for simple notifications.
