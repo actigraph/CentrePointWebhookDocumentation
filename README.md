@@ -3,10 +3,10 @@
 > ActiGraph's CentrePoint Webhook system is inspired by GitHub's Webhook API. There are many similarities if you are familiar with their system.
 
 - [Overview](#overview)
-- [Managing Webhooks](managing_webhooks.md)
-- [Events](event_types.md)
-- [Securing Webhooks](securing_webhooks.md)
-- [Validating Webhooks](validating_webhooks.md)
+- [Managing Webhooks](#Managing-webhooks)
+- [Events](#events)
+- [Securing Webhooks](#securing-webhooks)
+- [Validating Webhooks](#validating-webhooks)
 
 
 ## Overview
