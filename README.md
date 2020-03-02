@@ -11,7 +11,6 @@
 
 
 ## CentrePoint Integration Guide
--------------------
 To view all options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide#centrepoint-system-integration-guide).
 
 ## Overview
