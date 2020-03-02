@@ -4,9 +4,10 @@
 
 - [Overview](#overview)
 - [Managing Webhooks](#Managing-webhooks)
-- [Events](#events)
 - [Securing Webhooks](#securing-webhooks)
 - [Validating Webhooks](#validating-webhooks)
+- [Events](#events)
+- [Open Firewall Access](#open-firewall-access)
 
 
 ## Overview
@@ -19,9 +20,14 @@ Webhooks are configured per study configuration. Once configured, they will be t
 
 Webhooks are managed in the [CentrePoint Web Portal](https://studyadmin.actigraphcorp.com). Refer to [Managing Webhooks](managing_webhooks.md) for more information.
 
+## Securing Webhooks
+
+The CentrePoint system provides various methods for authenticating outbound webhooks including BASIC Auth and Keyed-Hash (HMAC). Refer to [Securing Webhooks](securing_webhooks.md) for more information.
+
 ## Validating Webhooks
 
 Before any events can be sent to the Target URL for a webhook, the webhook needs to pass a validation process. The main purpose of this validation process is for ActiGraph to verify the owner of the Target URL. The verification process involves a validation code being sent to the Target URL, and your endpoint echoing back that same code. Refer to [Validating Webhooks](validating_webhooks.md) for more information.
+
 
 ## Events
 
