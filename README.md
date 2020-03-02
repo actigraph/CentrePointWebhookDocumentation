@@ -22,7 +22,7 @@ Webhooks are managed in the [CentrePoint Web Portal](https://studyadmin.actigrap
 
 ## Securing Webhooks
 
-The CentrePoint system provides various methods for authenticating outbound webhooks including BASIC Auth and Keyed-Hash (HMAC). Refer to [Securing Webhooks](securing_webhooks.md) for more information.
+The CentrePoint system provides various methods for authenticating outbound webhooks including [BASIC Auth](https://en.wikipedia.org/wiki/Basic_access_authentication) and Keyed-Hash (HMAC). Refer to [Securing Webhooks](securing_webhooks.md) for more information.
 
 ## Validating Webhooks
 
