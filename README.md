@@ -34,7 +34,7 @@ Before any events can be sent to the Target URL for a webhook, the webhook needs
 
 ## Events
 
-Events are what you wish to subscribe to in order to receive notifications once they are triggered. Events correspond to a certain set of actions that can happen to your Study. For example, if you subscribe to the `upload` event you'll receive some details pertaining to any uploads to subjects that are managed under the Study (when the upload started, completes or encounters an error).
+Events are what you wish to subscribe to in order to receive notifications once they are triggered. Events correspond to a certain set of actions that can happen to your Study. For example, if you subscribe to the `upload` event you'll receive some details pertaining to any uploads to subjects that are managed under the Study (when the upload started, completes or encounters an error). Refer to [Event Types](event_types.md) for more info.
 
 Available events are:
 
