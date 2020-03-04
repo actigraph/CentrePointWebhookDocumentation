@@ -6,7 +6,8 @@ Each event has as similar JSON schema, but a unique `payload` object that is det
 
 ## Raw Processing Complete Event
 
-Triggered when a processing of raw data upload has completed.
+Triggered when the processing/ingestion of an upload has completed.  This event is specific to the processing of "RAW" sub-second data and only applies to studies utilizing the CentrePoint Insight Watch (CPW) or other studies with a 'RAW-only' data collection mode. This event can be used to denote when a RAW data retrieval request can be made in the CentrePoint (V3) API (via Data Retrieval request) for a specific data range.* For supported studies, this will be the first event that is trigged in the data processing pipeline.
+
 
 **Webhook event name:**
 
@@ -58,7 +59,7 @@ connection: keep-alive
 
 ## Data Retrieval Complete Event
 
-Triggered when a processing of data retrieval request made through the CentrePoint API has completed.
+Triggered when a data retrieval request (made through the CentrePoint (V3) API has completed. This event can be utilized to know when data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.
 
 **Webhook event name:**
 
@@ -146,9 +147,11 @@ connection: keep-alive
 
 ## Upload Event
 
-Triggered when the processing/ingestion of an upload occurs from any CentrePoint client (such as ActiSync, CentrePoint Data Hub (CDH) and/or CP Mobile Device). There's three variations of the event which is denoted in the "status" property: started (denotes that processing/ingestion has started), completed (denotes processing/ingestion has completed), and error (denotes an error occurred during the upload processing). 
+Triggered when the processing/ingestion of an upload occurs from any CentrePoint client (such as ActiSync, CentrePoint Data Hub (CDH) and/or CP Mobile Device). 
 
-This events relates to the processing specific to the EPOCH (or 60-second/minute) summary data which is displayed in the CentrePoint Web Portal. This event is the final step in the processing pipeline for uploads coming in to the CentrePoint system.
+There's three variations of the event which is denoted in the "status" property: *started* (denotes that processing/ingestion has started), *completed* (denotes processing/ingestion has completed), and *error* (denotes an error occurred during the upload processing). 
+
+This events relates to the processing specific to EPOCH (or 60-second/minute) summary data which is displayed in the CentrePoint Web Portal. This event is the final step in the processing pipeline for uploads coming in to the CentrePoint system.
 
 
 **Webhook event name:**
