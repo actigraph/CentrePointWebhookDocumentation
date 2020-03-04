@@ -2,9 +2,12 @@
 
 Each event has as similar JSON schema, but a unique `payload` object that is determined by its event type.
 
-## UploadEvent
+## Upload Event
 
-Triggered when the processing of an upload occurs from any CentrePoint client (such as ActiSync, CentrePoint Data Hub (CDH) and/or CentrePoint Mobile Sync). This event is the final step in the processing pipeline for uploads coming in to the CentrePoint system.
+Triggered when the processing/ingestion of an upload occurs from any CentrePoint client (such as ActiSync, CentrePoint Data Hub (CDH) and/or CP Mobile Device). There's three variations of the event: started (denotes that processing/ingestion has started), completed (denotes processing/ingestion has completed), and error (denotes an error occurred during the upload processing)*. 
+
+This events relates to the processing specific to the EPOCH (or 60-second/minute) summary data which is displayed in the CentrePoint Web Portal. This event is the final step in the processing pipeline for uploads coming in to the CentrePoint system.
+
 
 **Webhook event name:**
 
