@@ -36,13 +36,6 @@ Before any events can be sent to the Target URL for a webhook, the webhook needs
 
 Events are what you wish to subscribe to in order to receive notifications once they are triggered. Events correspond to a certain set of actions that can happen to your Study. For example, if you subscribe to the `upload` event you'll receive some details pertaining to any uploads to subjects that are managed under the Study (when the upload started, completes or encounters an error). Refer to [Event Types](event_types.md) for more info.
 
-Available events are:
-
-1. `raw processing complete` *Event triggered upon processing completion of RAW sub-second data in the CentrePoint Version 3 System. This event can be used to denote when RAW data files are available to be retrieved in the CentrePoint (V3) API (via Data Retrieval request).* This will be the first event in the data processing pipeline from an upload-sync.
-
-2. `data retrieval complete` *Event triggered upon the completion of data retrieval request in the CentrePoint V3 API. This event can be used to know when RAW data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.*
-
-3. `upload` *Relates to events for the processing (or ingestion) of a given upload-sync. This event is triggered when CentrePoint processes an upload. There's three variations of the event: started (denotes that processing has started), completed (denotes processing has completed), and error (denotes an error occurred during the upload processing)*. This is the final event in the data processing pipeline from an upload-sync.
 
 ## Open Firewall Access 
 
