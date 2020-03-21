@@ -443,10 +443,9 @@ x-ActiGraph-Delivery: d97b7b71-4dcd-abc8-3a43-4fba3e5f8b86,
 x-Client-Cert-Used: false,
 user-Agent: ActiGraph-Hookshot/1.0
 {
-  "subjectIdentifier": "PrefixTEST",
+  "subjectIdentifier": "0123TEST",
   "id": 186,
   "studyId": 234,
-  "dailyStatisticsSettingId": "5b6805a3-ff8b-49e8-a92b-08d7ccf153fc",
   "subjectId": 17887,
   "date": "2017-11-01T05:00:00+00:00",
   "siteId": 2922,
