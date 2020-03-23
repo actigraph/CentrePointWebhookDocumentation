@@ -272,8 +272,7 @@ Triggered when the processing/ingestion of daily statistics aggregates has compl
 |:---|:---|:----------|
 |wearMinutes|Number|A daily aggregate, in minutes, of the non-partial epochs for subject that represent when subject was wearing device based on wear detection algorithm|
 |nonWearMinutes|Number|A daily aggregate, in minutes, of the non-partial epochs for subject that represent when subject was not wearing device based on wear detection algorithm|
-|sleepMinutes|Number|A daily aggregate of the non-partial epochs for subject that represent when the subject was asleep
- based on sleep detection algorithm|
+|sleepMinutes|Number|A daily aggregate of the non-partial epochs for subject that represent when the subject was asleep based on sleep detection algorithm|
 |awakeMinutes|Number|A daily aggregate of the non-partial epochs for subject that represent when the subject was awake|
 |wearAwakeMinute|Number|A daily aggregate of the non-partial epochs for subject that represent when subject was wearing device and awake|
 |wearSleepMinutes|Number|A daily aggregate of the non-partial epochs for subject that represent when subject was wearing device and asleep|
