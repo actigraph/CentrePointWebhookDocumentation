@@ -6,8 +6,8 @@ Once your server is configured to receive payloads, it'll listen for any paylod 
 
 
 ## Authentication Types
-1. [HTTP BASIC Authentication](#Basic-auth)
-2. [Digital Signature](#Digital-Signature)
+1. [HTTP BASIC Authentication](#basic-auth)
+2. [Digital Signature](#digital-signature)
 
 ### Basic AUTH
 
