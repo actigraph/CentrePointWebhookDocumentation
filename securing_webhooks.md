@@ -1,10 +1,19 @@
 # Securing your webhooks
 
-> At this time, please contact ActiGraph for further assistance to creating a Webhook for your Study. If you wish to have a passcode configured with your Webhook, please let us know during this process.
+The CentrePoint Webhooks system provides the ability to authenticate outbound requests. Authentication is not required by CentrePoint but is an option that can be selected upon creating/editing a webhook from the CentrePoint Web Portal. Refer to [Managing Webhooks](managing_webhooks.md) on how to create/edit a webhook from the CentrePoint Web Portal. 
 
-Once your server is configured to receive payloads, it'll listen for any paylod sent to the endpoint you configured. For security reasons, you probably want to limit requests to those coming from ActiGraph. There are a few ways to go about this, for example, you could opt to whitelist requests from ActiGraph's IP address, but a far better solution is to set up a passcode (token) and validate the information.
+Once your server is configured to receive payloads, it'll listen for any paylod sent to the endpoint you configured. For security reasons, you probably want to limit requests to those coming from ActiGraph. There are a few ways to go about this, for example, you could opt to whitelist requests from ActiGraph's IP address, but an easier solution can be to utilize an authentication mechanism offered by the CentrePoint System.
 
-### Validating payloads from ActiGraph
+
+## Authentication Types
+1. [HTTP BASIC Authentication](#basic-auth)
+2. [Digital Signature](#open-firewall-access)
+
+### Basic AUTH
+
+
+
+### Digital Signature (or HMAC Keyed-hash) Validating payloads from ActiGraph
 
 When your passcode token is set, ActiGraph uses it to create a hash signature with each payload.
 
