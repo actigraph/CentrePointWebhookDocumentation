@@ -29,7 +29,7 @@ Before any events can be sent to the Target URL for a webhook, the webhook needs
 
 ## Securing Webhooks
 
-The CentrePoint system provides a means to authenticate outbound webhooks including [BASIC Auth](https://en.wikipedia.org/wiki/Basic_access_authentication) and Digital Signatures (via HMAC256 Keyed-Hash). Refer to [Securing Webhooks](securing_webhooks.md) for more information.
+The CentrePoint system provides a means to authenticate outbound webhooks including BASIC Auth and Digital Signatures (via HMAC256 Keyed-Hash). Refer to [Securing Webhooks](securing_webhooks.md) for more information.
 
 ## Events
 
