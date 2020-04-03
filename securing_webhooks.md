@@ -18,7 +18,7 @@ Because base64 is easily decoded, the CP Webhooks system requires Basic authenti
 
 ### Digital Signature
 
-When your passcode token is set, ActiGraph uses it to create a hash signature with each payload.
+The  CentrePoint Webhooks System suppors computing a digital signature that verifies that a webhook request came from ActiGraph. This is done through a private 'passcode' that is not publicly known. The passcode is set upon creating a webhook in the CentrePoint Web Portal. Once the passcode is set, ActiGraph uses it to create a hash signature with each payload using the HMAC-256 algorithm.
 
 This hash signature is passed along with each request in the headers as `X-ActiGraph-Signature`. Suppose you have a basic server listening to webhooks that looks like this:
 
