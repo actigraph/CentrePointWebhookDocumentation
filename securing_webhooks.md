@@ -6,14 +6,14 @@ Once your server is configured to receive payloads, it'll listen for any paylod 
 
 
 ## Authentication Types
-1. [HTTP BASIC Authentication](#basic-auth)
-2. [Digital Signature](#open-firewall-access)
+1. [HTTP BASIC Authentication](#Basic-auth)
+2. [Digital Signature](#Digital-Signature)
 
 ### Basic AUTH
 
 
 
-### Digital Signature (or HMAC Keyed-hash) Validating payloads from ActiGraph
+### Digital Signature
 
 When your passcode token is set, ActiGraph uses it to create a hash signature with each payload.
 
