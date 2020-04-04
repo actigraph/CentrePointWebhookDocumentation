@@ -7,7 +7,7 @@ Once your server is configured to receive payloads, it'll listen for any paylod 
 
 ## Authentication Types/Schemes
 - [HTTP Basic AUTH](#http-basic-auth)
-- [Digital Signature](#digital-signature)
+- [Digital Signature](#digital-signature-hmac-256-keyed-hash)
 
 ### HTTP Basic AUTH
 
