@@ -6,10 +6,10 @@ Once your server is configured to receive payloads, it'll listen for any paylod 
 
 
 ## Authentication Types/Schemes
-- [Basic AUTH](#basic-auth)
+- [HTTP Basic AUTH](#basic-auth)
 - [Digital Signature](#digital-signature)
 
-### Basic AUTH
+### HTTP Basic AUTH
 
 The CentrePoint Webhooks System supports [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) (or BASIC Auth) as an authencation mechanism for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the word "Basic" followed by a space and a base64-encoded string with a username & password.
 
