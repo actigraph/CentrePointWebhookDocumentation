@@ -11,14 +11,14 @@ Once your server is configured to receive payloads, it'll listen for any paylod 
 
 ### HTTP Basic AUTH
 
-The CentrePoint Webhooks System supports [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) (or BASIC Auth) as an authencation mechanism for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the word "Basic" followed by a space and a base64-encoded string with a username & password.
+The CentrePoint Webhooks System supports [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) (or BASIC Auth) as an authencation scheme for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the word "Basic" followed by a space and a base64-encoded string with a username & password.
 
 Because base64 is easily decoded, the CP Webhooks system requires Basic authentication (and all other authentication types) to be be used with HTTPS.
 
 
 ### Digital Signature (HMAC 256 Keyed-Hash)
 
-The CentrePoint Webhooks System suppors computing a digital signature as another authenication mechanism. Using a digital signature provides a means to validate/verify that a webhook request came from ActiGraph. This is done through a private passcode that is not publicly known. The passcode is set upon creating a webhook in the CentrePoint Web Portal. Once the passcode is set, ActiGraph uses it to create a hash signature with each payload using the HMAC-256 algorithm.
+The CentrePoint Webhooks System supports computing a digital signature as another authenication scheme. Using a digital signature provides a means to validate/verify that a webhook request came from ActiGraph. This is done through a private passcode that is not publicly known. The passcode is set upon creating a webhook in the CentrePoint Web Portal. Once the passcode is set, ActiGraph uses it to create a hash signature with each payload using the HMAC-256 algorithm.
 
 This hash signature is passed along with each request in the headers as `X-ActiGraph-Signature`. Suppose you have a basic server listening to webhooks that looks like this:
 
