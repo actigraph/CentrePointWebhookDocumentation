@@ -56,7 +56,7 @@ connection: keep-alive
 
 ## Data Retrieval Complete Event
 
-Triggered when a data retrieval request (made through the CentrePoint (V3) API has completed. This event can be utilized to know when data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.
+Triggered when a data retrieval request made through the CentrePoint (V3) API has completed. This event can be utilized to know when data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.
 
 **Webhook event name:**
 
