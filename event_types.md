@@ -4,7 +4,7 @@ Each event has as similar JSON schema, but a unique `payload` object that is det
 
 ## Raw Processing Complete Event
 
-Triggered when the processing/ingestion of an upload has completed.  This event is specific to the processing of "RAW" sub-second data and only applies to studies utilizing the CentrePoint Insight Watch (CPW) or other studies with a 'RAW-only' data collection mode. This event can be used to denote when a RAW data retrieval request can be made in the CentrePoint (V3) API (via Data Retrieval request) for a specific data range.* For supported studies, this will be the first event that is trigged in the data processing pipeline.
+Triggered when the processing of the RAW sub-second data of an upload has completed.  This event is specific to the processing of "RAW" sub-second data and only applies to studies utilizing the CentrePoint Insight Watch (CPW) or other studies with a 'RAW-only' data collection mode. This event can be used to denote when a RAW data retrieval request can be made in the CentrePoint (V3) API (via Data Retrieval request) for a specific data range.* For supported studies, this will be the first event that is trigged in the data processing pipeline.
 
 **Webhook event name:**
 
