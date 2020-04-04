@@ -2,10 +2,10 @@
 
 The CentrePoint Webhooks system provides the ability to authenticate outbound requests. Authentication is not required by CentrePoint but is an option that can be selected upon creating/editing a webhook from the CentrePoint Web Portal. Refer to [Managing Webhooks](managing_webhooks.md) on how to create/edit a webhook from the CentrePoint Web Portal. 
 
-Once your server is configured to receive payloads, it'll listen for any paylod sent to the endpoint you configured. For security reasons, you probably want to limit requests to those coming from ActiGraph. There are a few ways to go about this, for example, you could opt to whitelist requests from ActiGraph's IP address, but an easier solution can be to utilize an authentication mechanism offered by the CentrePoint System.
+Once your server is configured to receive payloads, it'll listen for any paylod sent to the endpoint you configured. For security reasons, you probably want to limit requests to those coming from ActiGraph. There are a few ways to go about this, for example, you could opt to whitelist requests from ActiGraph's IP address, but an easier solution may be to utilize an authentication scheme offered by the CentrePoint Webhooks System.
 
 
-## Authentication Types
+## Authentication Types/Schemes
 - [Basic AUTH](#basic-auth)
 - [Digital Signature](#digital-signature)
 
