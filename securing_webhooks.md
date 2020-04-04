@@ -16,7 +16,7 @@ The CentrePoint Webhooks System supports [Basic access authentication](https://e
 Because base64 is easily decoded, the CP Webhooks system requires Basic authentication (and all other authentication types) to be be used with HTTPS.
 
 
-### Digital Signature (Keyed-Hash - HMAC 256)
+### Digital Signature (HMAC 256 Keyed-Hash)
 
 The CentrePoint Webhooks System suppors computing a digital signature as another authenication mechanism. Using a digital signature provides a means to validate/verify that a webhook request came from ActiGraph. This is done through a private passcode that is not publicly known. The passcode is set upon creating a webhook in the CentrePoint Web Portal. Once the passcode is set, ActiGraph uses it to create a hash signature with each payload using the HMAC-256 algorithm.
 
