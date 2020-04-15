@@ -35,6 +35,9 @@ The CentrePoint system provides a means to authenticate outbound webhooks includ
 
 Events are what you wish to subscribe to in order to receive notifications once they are triggered. Events correspond to a certain set of actions that can happen to your Study. For example, if you subscribe to the `upload` event you'll receive some details pertaining to any uploads to subjects that are managed under the Study (when the upload started, completes or encounters an error). Refer to [Event Types](event_types.md) for more info.
 
+## Auto Retries
+
+When a webhook delivery is attempted and the destination server fails to respond, the delivery will be retried a couple times to mitigate any temporary network problems. If the destination server still fails to respond, the webhook delivery will automatically be attempted again 24 hours later and then once more after another 24 hours. If the webhook delivery fails all these retries, then it will need to be manually resent from the webhook Details page.
 
 ## Open Firewall Access 
 

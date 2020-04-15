@@ -33,6 +33,10 @@ To view webhook details and history, browse to the Webhook Management page for a
 
 To view the request and response of a particular delivery, click the plus button for that delivery. Here you can see the headers and payload used in the request and the headers and body that was received from your endpoint.
 
+## Resend Webhook Delivery
+
+You can resend any webhook delivery that has succeeded or failed by clicking the resend button for the delivery you want to resend. This will put the delivery into the In Progress status. Within a few minutes, the delivery will be resent and the status will be updated to Succeeded or Failed.
+
 ## Enable/Disable Webhook
 
 If you want to stop receiving webhook events from CentrePoint, you can disable a webhook by going to the Details page for that webhook and clicking the Disable button. Once disabled, future events will not be sent to that endpoint. If you want to enable a previously disabled webhook, go to the Details page for that webhook and click the Enable button.
