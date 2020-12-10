@@ -425,6 +425,20 @@ The following sections may be contained in the daily statistics webhook payload 
 |wearAwakeFilteredSteps|Number|Total steps where activity monitor was worn and subject was considered awake|
 |wearSleepFilteredSteps|Number|Total steps where activity monitor was worn and subject was considered asleep|
 
+### Hildebrand MET/Calorie Aggregation
+
+|Name|Type|Description|
+|:---|:---|:----------|
+|**nonFilteredMets**|Number|Total METS for the day|
+|**wearMets**|Number|Total METS where activity monitor was considered worn|
+|**wearAwakeMets**|Number|Total METS where activity monitor was worn and subject was considered awake|
+|**nonFilteredMetsAverage**|Number|Average METS for the day|
+|**wearMetsAverage**|Number|Average METS where activity monitor was considered worn|
+|**wearAwakeMetsAverage**|Number|Average METS where activity monitor was worn and subject was considered awake|
+|**nonFilteredCalories**|Number|Total Calories for the day|
+|**wearCalories**|Number|Total Calories where activity monitor was considered worn|
+|**wearAwakeCalories**|Number|Total Calories where activity monitor was worn and subject was considered awake|
+
 **Webhook payload example:**
 
 The following are the parameters within the webhook request when upload processing is started
