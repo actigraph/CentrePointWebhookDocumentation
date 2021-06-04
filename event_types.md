@@ -585,9 +585,9 @@ Triggered when the processing/ingestion of cp2 daily statistics aggregates has c
 |dayStatId|Number|Daily Statistics Record ID|
 |subjectIdentifier|String|CentrePoint Subject Identifier|
 |date|String (ISO8601 Date/Time)|Date of daily statistics record in subject's timezone|
-|bouts|Object|Bout classification in buckets|
+|bouts|Object (see Bouts)|Bout classification in buckets|
 |calories|Number|A daily aggregate of calories expended for a subject|
-|cutpoints|Object|Classification of a level of activity|
+|cutpoints|Object (see Cutpoints)|Classification of a level of activity|
 |axisXCounts|Number|A daily aggregate of the X axis counts from the non-partial epochs for subject|
 |axisYCounts|Number|A daily aggregate of the Y axis counts from the non-partial epochs for subject|
 |axisZCounts|Number|A daily aggregate of the Z axis counts from the non-partial epochs for subject|
@@ -595,9 +595,9 @@ Triggered when the processing/ingestion of cp2 daily statistics aggregates has c
 |mvpa|Number|A daily aggregate including the summation for the Staudenmayer Activity Intensity Cut Point between “Moderate” and “Vigorous”|
 |steps|Number|Total steps for day|
 |totalMinutes|Number|Total minutes for day|
-|wearFilteredBouts|Object|Bout classification in buckets that represent when subject was wearing device|
+|wearFilteredBouts|Object (see Bouts)|Bout classification in buckets that represent when subject was wearing device|
 |wearFilteredCalories|Number|A daily aggregate of calories expended for a subject that represent when subject was wearing device|
-|wearFilteredCutPoints|Object|Classification of a level of activity that represent when subject was wearing device|
+|wearFilteredCutPoints|Object (see Cutpoints)|Classification of a level of activity that represent when subject was wearing device|
 |wearFilteredAxisXCounts|Number|A daily aggregate of the X axis counts from the non-partial epochs for subject that represent when subject was wearing device|
 |wearFilteredAxisYCounts|Number|A daily aggregate of the Y axis counts from the non-partial epochs for subject that represent when subject was wearing device|
 |wearFilteredAxisZCounts|Number|A daily aggregate of the Z axis counts from the non-partial epochs for subject that represent when subject was wearing device|
@@ -609,8 +609,8 @@ Triggered when the processing/ingestion of cp2 daily statistics aggregates has c
 |awakeWearFilteredAxisYCounts|Number|A daily aggregate of the Y axis counts from the non-partial epochs for subject that represent when subject was wearing device and awake|
 |awakeWearFilteredAxisZCounts|Number|A daily aggregate of the Z axis counts from the non-partial epochs for subject that represent when subject was wearing device and awake|
 |awakeWearFilteredMVPA|Number|A daily aggregate where the Staudenmayer Activity Intensity Cut Point is between “Moderate” and “Vigorous” representing when subject was wearing the device and awake|
-|awakeWearFilteredCutPoints|Object|Classification of a level of activity that represent when subject was wearing device and awake|
-|awakeWearFilteredBouts|Object|Bout classification in buckets that represent when subject was wearing device and awake|
+|awakeWearFilteredCutPoints|Object (see Cutpoints)|Classification of a level of activity that represent when subject was wearing device and awake|
+|awakeWearFilteredBouts|Object (see Bouts)|Bout classification in buckets that represent when subject was wearing device and awake|
 |awakeWearFilteredCalories|Number|A daily aggregate of calories expended for a subject that represent when subject was wearing device and awake|
 |awakeWearFilteredSteps|Number|Total steps for day that represent when subject was wearing device and awake|
 
