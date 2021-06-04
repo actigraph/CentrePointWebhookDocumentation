@@ -650,7 +650,7 @@ user-Agent: ActiGraph-Hookshot/1.0
   "siteId": 2937,
   "dayStatId": 1869240,
   "subjectIdentifier": "000103",
-  "date": "2013-08-07T00:00:00+00:00",
+  "date": "2013-08-07T00:00:00",
   "bouts": [
     {
       "name": "10 minutes or more",
