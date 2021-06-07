@@ -1,6 +1,6 @@
 # Raw Processing Complete Event
 
-Triggered when the processing of the RAW sub-second data of an upload has completed.  This event is specific to the processing of "RAW" sub-second data and only applies to studies utilizing the CentrePoint Insight Watch (CPW) or other studies with a 'RAW-only' data collection mode. This event can be used to denote when a RAW data retrieval request can be made in the CentrePoint (V3) API (via Data Retrieval request) for a specific data range. For supported studies, this will be the first event that is trigged in the data processing pipeline.
+Triggered when the processing of the RAW sub-second data of an upload has completed.  This event is specific to the processing of "RAW" sub-second data and only applies to studies utilizing the CentrePoint Insight Watch (CPW) or other studies with a 'RAW-only' data collection mode. This event can be used to denote when a RAW data retrieval request can be made in the CentrePoint (V3) API (via Data Retrieval request) for a specific data range. For supported studies, this will be the first event that is triggered in the data processing pipeline.
 
 **Webhook event name:**
 
@@ -14,8 +14,8 @@ Triggered when the processing of the RAW sub-second data of an upload has comple
 |subject_id|Number|CentrePoint Subject ID|
 |monitor_serial|String|Activity Monitor Serial Number|
 |created_at_utc|String (ISO8601 Date/Time)|Created Date of upload processing request|
-|min_event_timestamp|String (ISO8601 Date/Time)|Minimum timestamp of processsed raw data|
-|max_event_timestamp|String (ISO8601 Date/Time)|Maximum timestamp of processsed raw data|
+|min_event_timestamp|String (ISO8601 Date/Time)|Minimum timestamp of processed raw data|
+|max_event_timestamp|String (ISO8601 Date/Time)|Maximum timestamp of processed raw data|
 |status|String|Completed or Error|
 |error_message|String|Error message if processing failed|
 
