@@ -21,7 +21,7 @@ Triggered when the processing of the RAW sub-second data of an upload has comple
 
 **Webhook payload example:**
 
-The following are the parameters within the webhook request when upload processing is started
+The following are the parameters within the webhook request when upload processing is started.
 
 ```http
 POST <webhook uri goes here>
