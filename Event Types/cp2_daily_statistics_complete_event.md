@@ -26,6 +26,7 @@ Triggered when the processing/ingestion of cp2 daily statistics aggregates has c
 |mvpa|Number|A daily aggregate including the summation for the Staudenmayer Activity Intensity Cut Point between “Moderate” and “Vigorous”|
 |steps|Number|Total steps for day|
 |totalMinutes|Number|Total minutes for day|
+|mets|Number|Average MET calculation for day|
 |wearFilteredBouts|Object (see Bouts)|Bout classification in buckets that represent when subject was wearing device|
 |wearFilteredCalories|Number|A daily aggregate of calories expended for a subject that represent when subject was wearing device|
 |wearFilteredCutPoints|Object (see Cutpoints)|Classification of a level of activity that represent when subject was wearing device|
@@ -35,6 +36,7 @@ Triggered when the processing/ingestion of cp2 daily statistics aggregates has c
 |wearFilteredMVPA|Number|A daily aggregate including the summation for the Staudenmayer Activity Intensity Cut Point between “Moderate” and “Vigorous” that represent when subject was wearing device|
 |wearFilteredSteps|Number|Total steps for day that represent when subject was wearing device|
 |wearMinutes|Number|A daily aggregate, in minutes, of the non-partial epochs for subject that represent when subject was wearing device based on wear detection algorithm|
+|wearFilteredMets|Number|Average MET calculation from wear data for day|
 |awakeWearMinutes|Number|A daily aggregate of the non-partial epochs for subject that represent when subject was wearing device and awake|
 |awakeWearFilteredAxisXCounts|Number|A daily aggregate of the X axis counts from the non-partial epochs for subject that represent when subject was wearing device and awake|
 |awakeWearFilteredAxisYCounts|Number|A daily aggregate of the Y axis counts from the non-partial epochs for subject that represent when subject was wearing device and awake|
@@ -44,6 +46,7 @@ Triggered when the processing/ingestion of cp2 daily statistics aggregates has c
 |awakeWearFilteredBouts|Object (see Bouts)|Bout classification in buckets that represent when subject was wearing device and awake|
 |awakeWearFilteredCalories|Number|A daily aggregate of calories expended for a subject that represent when subject was wearing device and awake|
 |awakeWearFilteredSteps|Number|Total steps for day that represent when subject was wearing device and awake|
+|awakeWearFilteredMets|Number|Average MET calculation from wear-awake data for day|
 
 ## Bouts
 
@@ -134,6 +137,7 @@ user-Agent: ActiGraph-Hookshot/1.0
   "mvpa": 2,
   "steps": 1296.0,
   "totalMinutes": 569,
+  "mets": 1.74,
   "wearFilteredBouts": [
     {
       "name": "10 minutes or more",
@@ -185,6 +189,7 @@ user-Agent: ActiGraph-Hookshot/1.0
   "wearFilteredMVPA": 2,
   "wearFilteredSteps": 1296.0,
   "wearMinutes": 197,
+  "wearFilteredMets": 1.68,
   "awakeWearMinutes": 133,
   "awakeWearFilteredAxisXCounts": 37479,
   "awakeWearFilteredAxisYCounts": 39628,
@@ -235,7 +240,8 @@ user-Agent: ActiGraph-Hookshot/1.0
     }
   ],
   "awakeWearFilteredCalories": 75.980322277385909,
-  "awakeWearFilteredSteps": 1011.0
+  "awakeWearFilteredSteps": 1011.0,
+  "awakeWearFilteredMets": 1.66
 }
 ```
 
