@@ -14,6 +14,7 @@ Next, select the appropriate Authentication Type for your consuming endpoint:
 - Select "None" if your endpoint has no required authentication.
 - Select "Basic Authentication" if your endpoint requires [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) and enter the Username and Password to be used for authentication.
 - Select "Keyed-Hash (HMAC)" if you endpoint requires [HMAC authentication](https://en.wikipedia.org/wiki/HMAC) and enter the Secret Key to be used for hashing messages. [SHA-256](https://en.wikipedia.org/wiki/SHA-2) is the cryptographic algorithm that will be used to generate a hash of the body of the request message. This hash will be sent in the "X-ActiGraph-Signature" header of the request.
+- Select "oAuth2" if you endpoint requires [oAuth2 authertication]( https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) and enter the Client Id, Client Secret and scope to use Bearer token. [Bearer Token](https://www.oauth.com/oauth2-servers/differences-between-oauth-1-2/bearer-tokens/) is a single string which acts as the authentication of the API request, sent in an HTTP “Authorization” header. The string is meaningless to clients using it, and may be of varying lengths. 
 
 Next, select the events that you want to subscribe to by checking the box next to the event. If the event has additional options, you can select or deselect those options.
 
