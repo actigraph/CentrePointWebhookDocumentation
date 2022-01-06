@@ -8,7 +8,7 @@ Once your server is configured to receive payloads, it'll listen for any paylod 
 ## Authentication Types/Schemes
 - [HTTP Basic AUTH](#http-basic-auth)
 - [Digital Signature](#digital-signature-hmac-256-keyed-hash)
-- [oAuth2 Tokens](#oAuth2-Tokens)
+- [OAuth2 Tokens](#OAuth2-Tokens)
 
 ### HTTP Basic AUTH
 
@@ -85,7 +85,7 @@ public static string HMACSHA256Base64(string secret, string message)
 
 Obviously, your language and server implementations may differ than this code.
 
-### oAuth2 Tokens
+### OAuth2 Tokens
 
 The CentrePoint Webhooks System supports [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) (or Token Access) as an authencation scheme for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the "Bearer Token". A [Bearer Token](https://www.oauth.com/oauth2-servers/differences-between-oauth-1-2/bearer-tokens/) is a single string which acts as the authentication of the API request, sent in an HTTP “Authorization” header. 
 
