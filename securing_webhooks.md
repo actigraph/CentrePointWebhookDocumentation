@@ -87,9 +87,9 @@ Obviously, your language and server implementations may differ than this code.
 
 ### oAuth2 Tokens
 
-The CentrePoint Webhooks System supports [oAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) (or Token Access) as an authencation scheme for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the "Bearer Tokens". [Bearer Tokens](https://www.oauth.com/oauth2-servers/differences-between-oauth-1-2/bearer-tokens/) a single string which acts as the authentication of the API request, sent in an HTTP “Authorization” header. 
+The CentrePoint Webhooks System supports [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) (or Token Access) as an authencation scheme for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the "Bearer Token". A [Bearer Token](https://www.oauth.com/oauth2-servers/differences-between-oauth-1-2/bearer-tokens/) is a single string which acts as the authentication of the API request, sent in an HTTP “Authorization” header. 
 
-Because base64 is easily decoded, the CP Webhooks system requires oAuth2 authentication (and all other authentication types) to be be used with HTTPS.
+Because base64 is easily decoded, the CP Webhooks system requires OAuth2 authentication (and all other authentication types) to be be used with HTTPS.
 
 
 ## More information
