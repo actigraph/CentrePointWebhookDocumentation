@@ -2,8 +2,6 @@
 
 Triggered when a data retrieval request made through the CentrePoint (V3) API has completed. This event only applies to studies utilizing the CentrePoint Insight Watch (CPW) or other studies with a 'RAW-only' data collection mode. This event can be utilized to know when data files are available to be downloaded (from a previous data retrieval request) in the CentrePoint (V3) API.
 
-## 
-
 **Webhook event name:**
 
 `data_retrieval_complete`
