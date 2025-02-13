@@ -14,7 +14,7 @@ This event relates to the processing specific to EPOCH (or 60-second/minute) sum
 
 | Name        | Type | Accepted Values | Statuses where displayed | Description  |
 | ------------- |:----------:|  -----: | -----: |  -----: |
-| status      | String | "started", "completed", "error" | "started", "completed", "error" | Status of upload processing
+| status      | String | "started", "completed", "error" | "started", "completed", "error" | Status of upload processing |
 | uploadId      | Integer    |   |  "started", "completed", "error" | Unique identifier for subject upload |
 | studyId | Integer  |    | "started", "completed", "error" |  Unique identifier for study |
 | subjectId | Integer     |   | "started", "completed", "error" |Unique identifier for subject |
@@ -100,8 +100,8 @@ connection: keep-alive
 
 ## More information
 
-- [Overview](https://github.com/actigraph/WebhookDocumentation)
-- [Managing Webhooks](managing_webhooks.md)
-- [Event Types](event_types.md)
-- [Securing Webhooks](securing_webhooks.md)
-- [Validating Webhooks](validating_webhooks.md)
+- [Overview](/README.md)
+- [Managing Webhooks](/managing_webhooks.md)
+- [Event Types](/event_types.md)
+- [Securing Webhooks](/securing_webhooks.md)
+- [Validating Webhooks](/validating_webhooks.md)

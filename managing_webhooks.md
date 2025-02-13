@@ -11,6 +11,7 @@ To create a webhook, browse to the Webhook Management page for a study and click
 First, enter the full URL to your endpoint that will be consuming events from CentrePoint. (Note that only the HTTPS protocol is allowed)
 
 Next, select the appropriate Authentication Type for your consuming endpoint:
+
 - Select "None" if your endpoint has no required authentication.
 - Select "Basic Authentication" if your endpoint requires [basic HTTP authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) and enter the Username and Password to be used for authentication.
 - Select "Keyed-Hash (HMAC)" if you endpoint requires [HMAC authentication](https://en.wikipedia.org/wiki/HMAC) and enter the Secret Key to be used for hashing messages. [SHA-256](https://en.wikipedia.org/wiki/SHA-2) is the cryptographic algorithm that will be used to generate a hash of the body of the request message. This hash will be sent in the "X-ActiGraph-Signature" header of the request.
@@ -42,10 +43,9 @@ You can resend any webhook delivery that has succeeded or failed by clicking the
 
 If you want to stop receiving webhook events from CentrePoint, you can disable a webhook by going to the Details page for that webhook and clicking the Disable button. Once disabled, future events will not be sent to that endpoint. If you want to enable a previously disabled webhook, go to the Details page for that webhook and click the Enable button.
 
-
 ## More information
 
-- [Overview](https://github.com/actigraph/WebhookDocumentation)
+- [Overview](README.md)
 - [Managing Webhooks](managing_webhooks.md)
 - [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)
