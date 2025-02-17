@@ -38,7 +38,9 @@ Events are what you wish to subscribe to in order to receive notifications once 
 
 ## Retry Policy
 
-When a webhook delivery is attempted and the destination server fails to respond, the delivery will be immediately retried a couple times to mitigate any temporary network problems. If the destination server still fails to respond, the webhook delivery will automatically be re-attempted again 24 hours later and then once more after another 24 hours. If the webhook delivery fails all these retries, it can be manually resent from the webhook Details page in the CentrePoint Web Portal.
+"When a webhook delivery is attempted and the destination server fails to respond, the delivery will be immediately retried a couple times to mitigate any temporary network problems. If the destination server still fails to respond, the webhook delivery will automatically be re-attempted again 24 hours later and then once more after another 24 hours. If the webhook delivery fails all these retries, it can be manually resent from the webhook Details page in the CentrePoint Web Portal.
+
+If an event is attempted 3 times and fails, CentrePoint will invalidate the webhook in order to prevent events from being sent to webhooks that are no longer functional."
 
 ## Open Firewall Access
 
