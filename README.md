@@ -3,22 +3,22 @@
 > ActiGraph's CentrePoint Webhook system is inspired by GitHub's Webhook API. There are many similarities if you are familiar with their system.
 
 - [Overview](#overview)
-- [Managing Webhooks](#Managing-webhooks)
+- [Managing Webhooks](#managing-webhooks)
 - [Validating Webhooks](#validating-webhooks)
 - [Securing Webhooks](#securing-webhooks)
 - [Events](#events)
 - [Retry Policy](#retry-policy)
 - [Open Firewall Access](#open-firewall-access)
 
-
 ## CentrePoint Integration Guide
+
 To view all options/alternatives to integrate with the CentrePoint System, refer to the [CentrePoint Integration Guide](https://github.com/actigraph/CentrePointIntegrationGuide#centrepoint-system-integration-guide).
 
 ## Overview
 
 Webhooks allow you to build or set up integrations which subscribe to certain events on ActiGraph's CentrePoint ecosystem. When one of those events is triggered, the system will send a HTTP POST request containing event data to the webhook's configured URL. Webhooks can be used to update an external system or just for simple notifications.
 
-Webhooks are configured per study configuration. Once configured, they will be triggered each time one or more subscribed events occurs on that Study. 
+Webhooks are configured per study configuration. Once configured, they will be triggered each time one or more subscribed events occurs on that Study.
 
 ## Managing Webhooks
 
@@ -38,12 +38,13 @@ Events are what you wish to subscribe to in order to receive notifications once 
 
 ## Retry Policy
 
-When a webhook delivery is attempted and the destination server fails to respond, the delivery will be immediately retried a couple times to mitigate any temporary network problems. If the destination server still fails to respond, the webhook delivery will automatically be re-attempted again 24 hours later and then once more after another 24 hours. If the webhook delivery fails all these retries, it can be manually resent from the webhook Details page in the CentrePoint Web Portal.
+"When a webhook delivery is attempted and the destination server fails to respond, the delivery will be immediately retried a couple times to mitigate any temporary network problems. If the destination server still fails to respond, the webhook delivery will automatically be re-attempted again 24 hours later and then once more after another 24 hours. If the webhook delivery fails all these retries, it can be manually resent from the webhook Details page in the CentrePoint Web Portal.
 
-## Open Firewall Access 
+If an event is attempted 3 times and fails, CentrePoint will invalidate the webhook in order to prevent events from being sent to webhooks that are no longer functional."
+
+## Open Firewall Access
 
 In some scenarios, external systems receiving webhooks from ActiGraph may be behind a reverse-proxy with firewall enforcement. Here are the list of IPs that will need to be whitelisted in order to receive in-bound webhook requests from ActiGraph
-
 
 - 13.82.60.74
 - 40.114.106.25

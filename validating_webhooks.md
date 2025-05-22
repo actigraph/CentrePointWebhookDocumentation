@@ -5,7 +5,8 @@ Before any events can be sent to the Target URL of a webhook, the webhook needs 
 The validation message request message will look similar to the following example:
 
 Headers
-```
+
+```jsonc
 {
   "X-ActiGraph-Webhook-id": "74",
   "X-ActiGraph-Event": "validation",
@@ -18,7 +19,8 @@ Headers
 ```
 
 Payload
-```
+
+```jsonc
 {
   "WebhookId": "74",
   "ValidationCode": "1d3ad7a1-91c9-4ffc-8562-5bad545e6a40"
@@ -29,10 +31,9 @@ The validation code in the "X-ActiGraph-Hook-Secret" header and the payload will
 
 You can view validation requests and responses in the Recent Deliveries section of the Details page for a webhook. If a webhook fails to validate, you can view the validation delivery to check if your endpoint responded correctly. After corrections have been made, you can start the validation process again by clicking the Validate button on the webhook's Details page.
 
-
 ## More information
 
-- [Overview](https://github.com/actigraph/WebhookDocumentation)
+- [Overview](README.md)
 - [Managing Webhooks](managing_webhooks.md)
 - [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)

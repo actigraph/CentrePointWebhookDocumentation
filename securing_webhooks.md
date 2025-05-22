@@ -1,21 +1,20 @@
 # Securing your webhooks
 
-The CentrePoint Webhooks system provides the ability to authenticate outbound requests. Authentication is not required by CentrePoint but is an option that can be selected upon creating/editing a webhook from the CentrePoint Web Portal. Refer to [Managing Webhooks](managing_webhooks.md) on how to create/edit a webhook from the CentrePoint Web Portal. 
+The CentrePoint Webhooks system provides the ability to authenticate outbound requests. Authentication is not required by CentrePoint but is an option that can be selected upon creating/editing a webhook from the CentrePoint Web Portal. Refer to [Managing Webhooks](managing_webhooks.md) on how to create/edit a webhook from the CentrePoint Web Portal.
 
 Once your server is configured to receive payloads, it'll listen for any paylod sent to the endpoint you configured. For security reasons, you probably want to limit requests to those coming from ActiGraph. There are a few ways to go about this, for example, you could opt to whitelist requests from ActiGraph's IP address, but an easier solution may be to utilize an authentication scheme offered by the CentrePoint Webhooks System.
 
-
 ## Authentication Types/Schemes
+
 - [HTTP Basic AUTH](#http-basic-auth)
 - [Digital Signature](#digital-signature-hmac-256-keyed-hash)
-- [OAuth2 Tokens](#OAuth2-Tokens)
+- [OAuth2 Tokens](#oauth2-tokens)
 
 ### HTTP Basic AUTH
 
 The CentrePoint Webhooks System supports [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) (or BASIC Auth) as an authencation scheme for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the word "Basic" followed by a space and a base64-encoded string with a username & password.
 
 Because base64 is easily decoded, the CP Webhooks system requires Basic authentication (and all other authentication types) to be be used with HTTPS.
-
 
 ### Digital Signature (HMAC 256 Keyed-Hash)
 
@@ -87,14 +86,13 @@ Obviously, your language and server implementations may differ than this code.
 
 ### OAuth2 Tokens
 
-The CentrePoint Webhooks System supports [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) (or Token Access) as an authencation scheme for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the "Bearer Token". A [Bearer Token](https://www.oauth.com/oauth2-servers/differences-between-oauth-1-2/bearer-tokens/) is a single string which acts as the authentication of the API request, sent in an HTTP “Authorization” header. 
+The CentrePoint Webhooks System supports [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) (or Token Access) as an authencation scheme for webhooks. Here the CP Webhooks System sends HTTPS requests with the authorization header that contains the "Bearer Token". A [Bearer Token](https://www.oauth.com/oauth2-servers/differences-between-oauth-1-2/bearer-tokens/) is a single string which acts as the authentication of the API request, sent in an HTTP “Authorization” header.
 
 Because base64 is easily decoded, the CP Webhooks system requires OAuth2 authentication (and all other authentication types) to be be used with HTTPS.
 
-
 ## More information
 
-- [Overview](https://github.com/actigraph/WebhookDocumentation)
+- [Overview](README.md)
 - [Managing Webhooks](managing_webhooks.md)
 - [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)
