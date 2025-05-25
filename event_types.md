@@ -12,7 +12,7 @@ Each event has as similar JSON schema, but a unique `payload` object that is det
 
 ## More information
 
-- [Overview](https://github.com/actigraph/WebhookDocumentation)
+- [Overview](README.md)
 - [Managing Webhooks](managing_webhooks.md)
 - [Event Types](event_types.md)
 - [Securing Webhooks](securing_webhooks.md)
